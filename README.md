@@ -1,34 +1,25 @@
-# 🚗 Driver Drowsiness Detection System
+# 🚗 Real-Time Driver Drowsiness Detection System
 
 ## 📌 Overview
-A real-time Driver Drowsiness Detection system using Computer Vision and Machine Learning.  
-The system monitors the driver’s eyes through webcam input and detects signs of fatigue. If drowsiness is detected, an alarm is triggered immediately to enhance road safety.
+This project is a real-time Driver Drowsiness Detection system using Computer Vision techniques.  
+It monitors the driver's eyes through a webcam and detects signs of fatigue. If drowsiness is detected, an alarm is triggered immediately to enhance road safety.
 
 ---
 
 ## 🎯 Problem Statement
 Driver fatigue is one of the leading causes of road accidents worldwide.  
-This project aims to build an intelligent system that detects early signs of drowsiness and prevents potential accidents.
+This system aims to detect early signs of drowsiness using real-time video analysis and prevent potential accidents by triggering an alert when fatigue is detected.
 
 ---
 
 ## 🧠 Approach
-The system follows a real-time pipeline:
+The system follows a real-time processing pipeline:
 
 - Face detection using Haar Cascade Classifier  
 - Eye Region of Interest (ROI) extraction  
-- Eye state classification (Open / Closed)  
-- Temporal logic: consecutive closed frames tracking  
-- Alarm activation if eyes remain closed for > 12 frames  
-
----
-
-## 🛠️ Tech Stack
-- Python  
-- OpenCV  
-- Haar Cascade Classifier  
-- NumPy  
-- Real-time Video Processing  
+- Eye state detection (Open / Closed)  
+- Temporal logic based on consecutive closed frames  
+- Alarm activation when threshold is exceeded  
 
 ---
 
@@ -38,7 +29,22 @@ The system follows a real-time pipeline:
 3. Extract eye region (ROI)  
 4. Classify eye state (Open / Closed)  
 5. Count consecutive closed frames  
-6. Trigger alarm when threshold is exceeded  
+6. Trigger alarm when drowsiness is detected  
+
+---
+
+## 🛠️ Tech Stack
+- Python  
+- OpenCV  
+- NumPy  
+- Haar Cascade Classifier  
+- Real-time Video Processing  
+
+---
+
+## 🚨 Alert Mechanism
+If the eyes remain closed for more than a defined number of consecutive frames,  
+the system triggers an audio alarm to alert the driver immediately.
 
 ---
 
