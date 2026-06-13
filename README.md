@@ -49,6 +49,18 @@ The system follows a real-time computer vision pipeline:
 If the eyes remain closed for more than a defined threshold of consecutive frames,  
 the system triggers an audible alarm to alert the driver in real-time.
 
+---
+
+## 📁 Project Structure
+
+
+
+
+
+
+
+
+
 
 
 ---
@@ -63,7 +75,7 @@ the system triggers an audible alarm to alert the driver in real-time.
 
 ## 👩‍💻 Author
 **Nada Ragab**  
-Data Scientist | Machine Learning & Computer Vision Engineer  
+Data Scientist | Machine Learning
 
 ---
 
