@@ -49,3 +49,40 @@ the system triggers an audio alarm to alert the driver immediately.
 ---
 
 ## 📁 Project Structure
+Driver-Drowsiness-Detection/
+│
+├── Detection/
+│   ├── face_detection.py
+│   ├── eye_detection.py
+│
+├── Classification/
+│   ├── model.py
+│
+├── cascades/
+│   ├── haarcascade_eye.xml
+│   ├── haarcascade_frontalface.xml
+│
+├── assets/
+│   ├── alarm.mp3
+│
+├── main.py
+├── requirements.txt
+└── README.md
+---
+
+## 🚀 Future Improvements
+- Replace Haar Cascade with Deep Learning model (CNN)  
+- Improve accuracy under low-light conditions  
+- Add yawning detection  
+- Deploy as mobile or embedded system  
+
+---
+
+## 👩‍💻 Author
+**Nada Ragab**  
+Data Scientist | AI & Machine Learning Enthusiast  
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
