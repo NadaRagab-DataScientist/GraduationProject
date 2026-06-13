@@ -4,6 +4,8 @@
 This project is a real-time Driver Drowsiness Detection system using Computer Vision techniques.  
 It monitors the driver's eyes through a webcam and detects signs of fatigue. If drowsiness is detected, an alarm is triggered immediately to enhance road safety.
 
+The system simulates a real-time binary classification problem (Eye Open vs Closed) combined with temporal sequence analysis for fatigue detection.
+
 ---
 
 ## 🎯 Problem Statement
@@ -13,7 +15,7 @@ This system aims to detect early signs of drowsiness using real-time video analy
 ---
 
 ## 🧠 Approach
-The system follows a real-time processing pipeline:
+The system follows a real-time computer vision pipeline:
 
 - Face detection using Haar Cascade Classifier  
 - Eye Region of Interest (ROI) extraction  
@@ -39,48 +41,29 @@ The system follows a real-time processing pipeline:
 - NumPy  
 - Haar Cascade Classifier  
 - Real-time Video Processing  
+- Computer Vision Pipelines  
 
 ---
 
 ## 🚨 Alert Mechanism
-If the eyes remain closed for more than a defined number of consecutive frames,  
-the system triggers an audio alarm to alert the driver immediately.
+If the eyes remain closed for more than a defined threshold of consecutive frames,  
+the system triggers an audible alarm to alert the driver in real-time.
 
----
 
-## 📁 Project Structure
-Driver-Drowsiness-Detection/
-│
-├── Detection/
-│   ├── face_detection.py
-│   ├── eye_detection.py
-│
-├── Classification/
-│   ├── model.py
-│
-├── cascades/
-│   ├── haarcascade_eye.xml
-│   ├── haarcascade_frontalface.xml
-│
-├── assets/
-│   ├── alarm.mp3
-│
-├── main.py
-├── requirements.txt
-└── README.md
+
 ---
 
 ## 🚀 Future Improvements
-- Replace Haar Cascade with Deep Learning model (CNN)  
-- Improve accuracy under low-light conditions  
-- Add yawning detection  
-- Deploy as mobile or embedded system  
+- Replace Haar Cascade with a Deep Learning-based CNN model  
+- Improve robustness under low-light and noisy environments  
+- Add yawning detection for better fatigue analysis  
+- Deploy as a mobile or embedded system (Raspberry Pi / Edge AI)
 
 ---
 
 ## 👩‍💻 Author
 **Nada Ragab**  
-Data Scientist | AI & Machine Learning Enthusiast  
+Data Scientist | Machine Learning & Computer Vision Engineer  
 
 ---
 
