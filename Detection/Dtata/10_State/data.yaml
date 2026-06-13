@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['c0 - Safe Driving', 'c2 - Talking on the phone', 'c4 - Drinking', 'd0 - Eyes Closed', 'd1 - Yawning', 'd2 - Nodding Off', 'looking away']
+
+roboflow:
+  workspace: deloitte-ullms
+  project: modified-distracted-driver-dataset
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/deloitte-ullms/modified-distracted-driver-dataset/dataset/2
