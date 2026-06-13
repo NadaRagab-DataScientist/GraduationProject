@@ -1,44 +1,45 @@
 # 🚗 Driver Drowsiness Detection System
 
 ## 📌 Overview
-This project detects driver drowsiness in real-time using computer vision and machine learning.  
-It identifies whether the driver's eyes are open or closed and triggers an alarm when drowsiness is detected.
+A real-time Driver Drowsiness Detection system using Computer Vision and Machine Learning.  
+The system monitors the driver’s eyes through webcam input and detects signs of fatigue. If drowsiness is detected, an alarm is triggered immediately to enhance road safety.
 
 ---
 
 ## 🎯 Problem Statement
-Driver fatigue is one of the major causes of road accidents.  
-This system helps in early detection of drowsiness to improve road safety.
+Driver fatigue is one of the leading causes of road accidents worldwide.  
+This project aims to build an intelligent system that detects early signs of drowsiness and prevents potential accidents.
 
 ---
 
 ## 🧠 Approach
-- Face detection using Haar Cascade
-- Eye detection from ROI
-- State classification: Open / Closed eyes
-- Alarm triggered after consecutive closed frames
+The system follows a real-time pipeline:
+
+- Face detection using Haar Cascade Classifier  
+- Eye Region of Interest (ROI) extraction  
+- Eye state classification (Open / Closed)  
+- Temporal logic: consecutive closed frames tracking  
+- Alarm activation if eyes remain closed for > 12 frames  
 
 ---
 
 ## 🛠️ Tech Stack
-- Python
-- OpenCV
-- Haar Cascade Classifier
-- Machine Learning (CNN optional version)
-- Real-time Video Processing
+- Python  
+- OpenCV  
+- Haar Cascade Classifier  
+- NumPy  
+- Real-time Video Processing  
 
 ---
 
-## ⚙️ How It Works
-1. Capture video from webcam
-2. Detect face
-3. Extract eye region
-4. Check eye state (open/closed)
-5. If closed for >12 frames → trigger alarm
+## ⚙️ System Workflow
+1. Capture video stream from webcam  
+2. Detect face in each frame  
+3. Extract eye region (ROI)  
+4. Classify eye state (Open / Closed)  
+5. Count consecutive closed frames  
+6. Trigger alarm when threshold is exceeded  
 
 ---
 
-## ▶️ Run Project
-```bash
-pip install -r requirements.txt
-python app/main.py
+## 📁 Project Structure
